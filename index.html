@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <script src="main.js"></script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!--Main CSS-->
+    <link rel = "stylesheet" href = "stylee.css">
+    <title>Responsive Personal Portfolio Website Design | @heresthecode</title>
+</head>
+<body>
+    <!-- HEADER DESIGN -->
+    <header class ="header">
+        <a href="#" class ="logo"> Portfolio</a>
+        <i class="fa-solid fa-bars" id = "menu-icon"></i>
+
+        <!-- <nav class ="navbar">
+            <div><a href="#header" class ="active">Home</a></div>
+            <div><a href="#about">About</a></div>
+            <div><a href="#services">Services</a></div>
+            <div><a href="#portfolio">Portfolio</a></div>
+            <div><a href="#contact">Contact</a></div>
+        </nav> -->
+
+        <nav class="navbar">
+            <div class="sidebar-toggle" onclick="toggleSidebar()">&#9776;</div>
+            <div class="sidebar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>   
+    </header>
+
+    <!--Home Section DESIGN-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello World, I'm</h3>
+            <h1>Abhinav Patel</h1>
+            <h3>I am a <span class="role"></span></h3>
+            <p>I'm a software Developer and here is my portfollio website. Here you'll learn about my journey as a Software Developer.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/abhinav-patel-969a9a229/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/abhinavpatel072"><i class="fa-brands fa-github"></i></a>
+                <!-- <a href="https://leetcode.com/u/abhinav_072/"><i class="fa-solid fa-code"></i></a>
+                <a href="https://www.geeksforgeeks.org/user/abhinavpatel072/"><i class="fa-solid fa-book"></i></a> -->
+            </div>
+            <a href="https://drive.google.com/file/d/180qUeawfGg6hmI0n8YTHtJyUMNzO_KL0/view?usp=drive_link" class="btn">Download RESUME</a>
+        </div>
+        <div class="home-img">
+            <img src="AbhinavPatel.jpg" alt="Abhinav Patel">
+        </div>
+    </section>
+    
+    <!--About Section Design-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/abhi.jpg" alt="Abhinav Patel">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <h3>Software Engineer</h3>
+            <p>I am Abhinav Patel, a dedicated Computer Science student specializing in Artificial Intelligence and Machine Learning. With a strong foundation in both theory and practical application, I am passionate about leveraging technology to solve real-world problems and drive innovation. My expertise includes developing machine learning models, data analysis, and full-stack software development.</p>
+            <div class="btn-wrapper">
+                <button class="btn" id="read-more-btn" onclick="toggleExtraContent()">Read More</button>
+                <button class="btn" id="read-less-btn" style="display: none;" onclick="toggleExtraContent()">Read Less</button>
+            </div>
+        </div>
+    </section>  
+    
+    <!-- Qualification Section -->
+    <div class="extra-content" id="extra-content">
+        <h2>Academic <span>Qualifications</span></h2>
+        <div class="academic-timeline">
+            <div class="academic-item">
+                <div class="academic-year">2021 - 2025</div>
+                <div class="academic-content">
+                    <h3>Bachelor of Technology in Computer Science with AIML</h3>
+                    <p>GL Bajaj Istitute of Technology and Management, Greater Noida</p>
+                    <p>CGPA: 8.05/10</p>
+                </div>
+            </div>
+            <div class="academic-item">
+                <div class="academic-year">2019 - 2020</div>
+                <div class="academic-content">
+                    <h3>Class 12</h3>
+                    <p>C.A Senior Secondary School</p>
+                    <p>Percentage: 79%</p>
+                </div>
+            </div>
+            <div class="academic-item">
+                <div class="academic-year">2017 - 2018</div>
+                <div class="academic-content">
+                    <h3>Class 10</h3>
+                    <p>C.A Senior Secondary School</p>
+                    <p>Percentage: 74.8%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Services Section-->
+
+
+    <!--Profiles Section99-->
+    <section class="profile" id="profile">
+        <h2 class="heading">My <span>Coding Profiles</span></h2>
+        <div class="profile-container">
+            <div class="profile-box">
+                <img src="images/leetcode.png" alt="">
+                <h3>LEETCODE</h3>
+                <p>I am a dedicated problem solver with extensive experience on LeetCode, having solved over <strong>450+ problems</strong> and achieved a maximum rating of <strong>1647</strong>, placing me in the top <strong>17%</strong> of all users.</p>
+                <!-- <p>I regularly solve problems across a variety of topics, including <strong>Arrays/String</strong>, <strong>Linked List</strong>, and <strong>Stack/Queue</strong>, constantly improving my coding skills with every challenge.</p> -->
+                <div class="input-box"><a href="https://leetcode.com/u/abhinav_072/" class="btn">Profile</a></div>
+            </div>
+            <div class="profile-box">
+                <img src="images/gfg.png" alt="">
+                <h3>GeeksforGeeks</h3>
+                <p>I actively solve data structures and algorithms problems on GeeksforGeeks to continuously sharpen my coding and problem-solving abilities. I have successfully solved <strong>300+ problems</strong> across topics like <strong>Array/String</strong>, <strong>Lisnked List</strong>, and <strong>Queue/Stack</strong>, and I regularly participate in coding challenges to stay competitive.</p>
+                <a href="https://www.geeksforgeeks.org/user/abhinavpatel072/" class="btn">Profile</a>
+            </div>
+            <div class="profile-box">
+                <img src="images/hackerrank.png" alt="">
+                <h3>HackerRank</h3>
+                <p>I actively participate in coding challenges on HackerRank to enhance my problem-solving and algorithmic skills. I have solved coding challenges and earned badges in <strong>Data Structures</strong>, <strong>Algorithms</strong>, and <strong>C/C++</strong>, <strong>Python</strong>, with a <strong>4-star rating</strong> in Problem Solving.</p>
+                <!-- <p>Additionally, I am continuously working towards improving my performance across various domains to stay competitive in the field.</p> -->
+                <a href="https://www.hackerrank.com/profile/Abhinavpatel072" class="btn">Profile</a>
+            </div>
+            <!-- <div class="profile-box">
+                <img src="images/codechef.png" alt="">
+                <h3>Code Chef</h3>
+                <p>Specializing in the development of machine learning models and AI solutions, I create data-driven algorithms for applications such as malware detection, predictive analysis, and automated decision-making.</p>
+                <div class="input-box"><a href="#" class="btn">Profile</a></div>
+            </div> -->
+        </div>
+    </section>
+    
+    <!--Project Section Design-->
+    <div class="project-section" id="projects">
+        <h2 class="page-header">Latest <span>Projects</span></h2>
+        <div class="project-container">
+            <div class="project-card project-card-left" id="project1">
+                <div class="project-num project-num-right">01</div>
+                <div class="project-content project-content-left">
+                    <div class="project-skills-conatiner">
+
+                        <!-- <div><i class="fab fa-html5"></i> </div>
+                        <div><i class="fab fa-css3-alt"></i></div>
+                        <div><i class="fab fa-js-square"></i></div>  -->
+
+                        <img src="images/html.png" alt="" class="project-skills">
+                        <img src="images/css.png" alt="" class="project-skills">
+                        <img src="images/js.png" alt="" class="project-skills">
+
+                    </div>
+                    <h2 class="project-heading">PortFolio</h2>
+                    <p class="project-subHeading">"Developed a attractive and visually appealing portfolio website showcasing my expertise in HTML, CSS and JavaScript"</p>
+                    <div class="btn-grp">
+                        <button class="btn">Read More</button>
+                        <a href="">
+                            <i title="GitHubLink" class="fa-brands fa-github icon" ></i>
+                        </a>
+                        <!-- <a href="">
+                            <i title="Live Link" class="fa-solid fa-link icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="project-card project-card-right" id="project2">
+                <div class="project-num project-num-left">02</div>
+                <div class="project-content project-content-right">
+                    <div class="project-skills-conatiner">
+                        <img src="images/html.png" alt="" class="project-skills">
+                        <img src="images/css.png" alt="" class="project-skills">
+                        <img src="images/js.png" alt="" class="project-skills">
+                        <img src="images/api.png" alt="" class="project-skills">
+                        <img src="images/bootstrap.png" alt="" class="project-skills">
+                    </div>
+                    <h2 class="project-heading">Weather API Report Generator </h2>
+                    <p class="project-subHeading">"Developed a responsive Weather API Report Generator that dynamically fetches and displays real-time weather data using modern web technologies, including HTML, CSS, JavaScript, and RESTful APIs."</p>
+                    <div class="btn-grp">
+                        <button class="btn">Read More</button>
+                        <!-- <a href="">
+                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                        </a>
+                        <a href="">
+                            <i title="Live Link" class="fa-solid fa-link icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="project-card project-card-left" id="project3">
+                <div class="project-num project-num-right">03</div>
+                <div class="project-content project-content-left">
+                    <div class="project-skills-conatiner">
+                        <img src="images/pyhton.png" alt="" class="project-skills">
+                        <img src="images/tensorflow.png" alt="" class="project-skills">
+                        <img src="images/scikit_learn.png" alt="" class="project-skills">
+                    </div>
+                    <h2 class="project-heading">Book Recommendation System</h2>
+                    <p class="project-subHeading">"Developed an ML-based recommendation system to suggest books based on user preferences."</p>
+                    <div class="btn-grp">
+                        <button class="btn">Read More</button>
+                        <a href="https://github.com/abhinavpatel072/Book_Recommendation_System">
+                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                        </a>
+                        <!-- <a href="">
+                            <i title="Live Link" class="fa-solid fa-link icon"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="project-card project-card-right" id="project4">
+                <div class="project-num project-num-left">04</div>
+                <div class="project-content project-content-right">
+                    <div class="project-skills-conatiner">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills">
+                        <img src="A logo.jpeg" alt="" class="project-skills"> 
+                    </div>
+                    <h2 class="project-heading">Tint & Orange</h2>
+                    <p class="project-subHeading">Its is a car modification company which provide you sheets to protect your car from scratch</p>
+                    <div class="btn-grp">
+                        <button class="btn">Read More</button>
+                        <a href="">
+                            <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                        </a>
+                        <a href="">
+                            <i title="Live Link" class="fa-solid fa-link icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!--Contact Section Design-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span> Me </span></h2>
+        <form action ="https://formspree.io/f/mpwarddo" method="POST">
+            <div class="input-box">
+                <input type = "text" name="name" placeholder="Full Name" required>
+                <input type = "email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type = "number" name="mobile" placeholder="Mobile Number" required>
+                <input type ="text" name="subject" placeholder = "Email Subject" required>
+            </div>
+            <textarea name="meassage" id="" cols="30" rows="10" placeholder = "Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+        <div class="social-media">
+            <a href="https://www.instagram.com/its__a6hii__/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:abhinavpatel072@gmail.com"><i class="fab fa-google"></i></a>
+            <a href="https://x.com/Abhinavpatel072"><i class="fab fa-twitter icon"></i></a>
+            <a href="https://wa.me/9115353759"><i class="fab fa-whatsapp icon"></i></a>
+        </div>
+    </section>
+
+
+    <!--Footer Section Design-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @abhinavpatel072 | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href = "#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <!--Main JS-->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810655e.js" crossorigin="anonymous"></script>
+<script>
+    var typeData = new Typed(".role",{
+        strings:[
+            "Full Stack Developer",
+            "Web Developer",
+            "Programmer",
+        ],
+        loop: true,
+        typeSpeed:100,
+        backSpeed:80,
+        backDelay:1000,
+    });
+<!-- </script>
+
+<script> -->
+    document.getElementById('toggleBtn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
+        var additionalInfo = document.getElementById('additionalInfo');
+        if (additionalInfo.classList.contains('show')) {
+            additionalInfo.classList.remove('show'); // Hide content
+            this.textContent = 'Read more'; // Change button text
+        } else {
+            additionalInfo.classList.add('show'); // Show content
+            this.textContent = 'Read less'; // Change button text
+        }
+    });
+<!-- </script>
+
+<script> -->
+    function toggleExtraContent() {
+        const extraContent = document.getElementById('extra-content');
+        const readMoreBtn = document.getElementById('read-more-btn');
+        const readLessBtn = document.getElementById('read-less-btn');
+        
+        if (extraContent.classList.contains('show')) {
+            extraContent.classList.remove('show');
+            readMoreBtn.style.display = 'inline-block';
+            readLessBtn.style.display = 'none';
+        } else {
+            extraContent.classList.add('show');
+            readMoreBtn.style.display = 'none';
+            readLessBtn.style.display = 'inline-block';
+        }
+    }
+<!-- </script>
+
+<script> -->
+    document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const projectCard = this.closest('.project-card');
+            projectCard.classList.toggle('expanded');
+            
+            if (projectCard.classList.contains('expanded')) {
+                this.textContent = 'Show Less';
+            } else {
+                this.textContent = 'Read More';
+            }
+        });
+    });
+<!-- </script>
+
+<script> -->
+    function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+}
+</script>
+</body>
+</html>
